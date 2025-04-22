@@ -1,6 +1,6 @@
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import FrontendSection from "./section/FrontendSection"
+import SkillsSection from "./section/SkillsSection"
 import HeroSection from "./section/HeroSection"
 import LatestProjectSection from "./section/LatestProjectSection"
 import ServicesSection from "./section/ServicesSection"
@@ -12,7 +12,7 @@ function App() {
       <HeroSection />
       <ServicesSection />
       <LatestProjectSection />
-      <FrontendSection />
+      <SkillsSection />
       <Footer />
     </>
   )
