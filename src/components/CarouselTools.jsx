@@ -1,11 +1,24 @@
-const CarouselTools = () => {
+const CarouselTools = ({
+  children : slides
+}) => {
   return (
-    <div className="bg-slate-300 w-fit p-4 rounded-4xl">
-      <div className="bg-white p-6 w-fit rounded-[50%] mb-8">
-        <img className="h-14 w-14" src="./js-logo.png" alt="" />
+    <div className="mt-4 px-2 pb-4 flex overflow-auto gap-5 sm:gap-4 lg:gap-8 sm:flex-wrap sm:justify-center xl:w-[85%] xl:mx-auto">
+      {slides}
+    </div>
+  )
+}
+
+export const CarouselCard = ({
+  toolsLogo,
+  toolsName
+}) => {
+  return (
+    <div className="bg-slate-200 w-40 2xl:w-50 px-6 sm:px-5 py-4 rounded-4xl grid place-items-center shadow-lg">
+      <div className="bg-white p-6 sm:p-5 2xl:p-7 w-24 sm:w-20 lg:w-24 2xl:w-36 h-24 lg:h-24 sm:h-20 2xl:h-36 rounded-[50%] mb-8 sm:mb-10 2xl:mb-16">
+        <img className="w-16 2xl:w-28 object-cover" src={`./${toolsLogo}`} alt="" />
       </div>
-      <h2 className="text-center font-medium text-lg font-poppins">JavaScript</h2>
-     </div>
+      <h2 className="text-center font-medium text-lg 2xl:text-2xl font-poppins">{toolsName}</h2>
+    </div>
   )
 }
 

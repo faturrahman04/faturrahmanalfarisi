@@ -1,27 +1,23 @@
-import CarouselTools from "../components/CarouselTools";
+import CarouselTools, { CarouselCard } from "../components/CarouselTools";
 
 const SkillsSection = () => {
 
-  const slidesTools = [
-    [
-      <CarouselTools />,
-      <CarouselTools />
-    ], 
-    [
-      <CarouselTools />,
-      <CarouselTools />
-    ]
-  ]
-
-
+  
   return (
-    <section id="skiils" className="bg-gray-200">
-      <div className="px-3 lg:px-20 2xl:px-24 pt-6 pb-4">
-        <h1>My Skills and Favorite Tools</h1>
+    <section id="skiils" className="bg-gray-100">
+      <div className="px-3 lg:px-20 2xl:px-24 pt-6 pb-12">
+        <h1 className="text-xl sm:text-2xl font-poppins font-medium mb-12">My <span className="border-b-2 border-b-orange-400 italic text-orange-400">Skills</span> and Favorite Tools</h1>
 
-        <div className="mt-4 px-2 flex">
-          {slidesTools.map((s) => (s))}
-        </div>
+        <CarouselTools>
+          <CarouselCard toolsLogo="js-logo.png" toolsName="JavaScript" />
+          <CarouselCard toolsLogo="tailwind-logo.svg" toolsName="Tailwind" />
+          <CarouselCard toolsLogo="react-logo.svg" toolsName="React" />
+          <CarouselCard toolsLogo="figma-logo.svg" toolsName="Figma" />
+          <CarouselCard toolsLogo="php-logo.svg" toolsName="PHP" />
+          <CarouselCard toolsLogo="bootstrap-logo.svg" toolsName="Bootstrap" />
+          
+        </CarouselTools>   
+        
 
       </div>
     </section>

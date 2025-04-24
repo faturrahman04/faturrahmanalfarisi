@@ -7,14 +7,14 @@ import ServicesSection from "./section/ServicesSection"
 
 function App() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <HeroSection />
       <ServicesSection />
       <LatestProjectSection />
       <SkillsSection />
       <Footer />
-    </>
+    </div>
   )
 }
 
