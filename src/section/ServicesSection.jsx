@@ -2,14 +2,24 @@ import { ServicesCard } from "../components/ServicesCard";
 
 const ServicesSection = () => {
   return (
-    <section id="services">
+    <section id="services" className="bg-gray-900">
       <div className="px-3 lg:px-20 2xl:px-24 pt-6 pb-4 font-poppins">
-        <h2 className="text-xl sm:text-2xl italic font-medium border-b-orange-400 border-b-2 w-fit">Services</h2>
+        <h2 className="text-white text-xl sm:text-2xl italic font-medium border-b-orange-400 border-b-2 w-fit">Services</h2>
 
         <div className="my-4 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-          <ServicesCard servicesTitle="Frontend Developer" servicesImage="laptop.svg"/>
-          <ServicesCard servicesTitle="Website Design" />
+          <ServicesCard 
+          servicesTitle="Frontend Website" 
+          servicesDesc="I have 1+ year exprience in frontend web development, i had finished many projects which is personal project, frontend web development is one of my favorite role in website development"
+          servicesImage="laptop.svg" 
+          navigation="/frontendwebsite" 
+          />
+
+          <ServicesCard 
+          servicesTitle="Website Design"
+          servicesDesc=""
+          />
           <ServicesCard servicesTitle="Mobile App Design" />
+          <ServicesCard servicesTitle="Website Projects" />
         </div>
 
       </div>
