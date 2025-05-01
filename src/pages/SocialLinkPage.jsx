@@ -1,8 +1,9 @@
-
+import { Link } from "react-router"
 
 const SocialLinkPage = () => {
   return (
     <div className="bg-gray-900 md:min-h-screen text-white px-10 lg:px-64 2xl:px-80 py-6 xl:py-10">
+      <Link className="inline-block mb-5 text-orange-400 text-shadow-md text-shadow-orange-700 underline" to="/">Home</Link>
       <h1 className="font-pacifico text-lg md:text-xl xl:text-2xl 2xl:text-4xl">Social Link</h1>
 
       <div className="flex flex-col mt-8 gap-4 font-playwrite">

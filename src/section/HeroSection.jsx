@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import { Link } from "react-router";
 
 const HeroSection = () => {
@@ -8,16 +8,41 @@ const HeroSection = () => {
          className="px-3 lg:px-20 2xl:px-24 pt-6 flex flex-col gap-6 lg:flex-row lg:gap-3 ">
         
         <div className="grid place-items-center lg:place-items-start mt-8 font-poppins text-center lg:text-left gap-1 lg:gap-3 lg:w-[70%]">
-          <h1
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1}}
+            transition={{duration: 2}}
             className="border-2 border-orange-400 w-32 2xl:w-36 text-center py-1 2xl:py-3 sm:text-lg 2xl:text-xl shadow-md shadow-orange-600">Hello There!
-          </h1>
+          </motion.h1>
 
           
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-7xl font-semibold mt-2">I'm <span className="text-orange-400 font-normal italic border-b-2 border-orange-400">Faturrahman Alf,</span></h1>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold 2xl:text-7xl ">Frontend Developer</h1>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold 2xl:text-7xl ">& Web Designer.</h1>
+          <motion.h1 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 2, delay: 0.4}}
+            className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-7xl font-semibold mt-2">I'm <span className="text-orange-400 font-normal italic border-b-2 border-orange-400">Faturrahman Alf,</span>
+          </motion.h1>
 
-          <p className="my-4 text-slate-50/75 2xl:text-xl">I'm a student majoring in Informatics who love to development a website especially Frontend, because i like to design website or application and i love what i do.</p>
+          <motion.h1 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 2, delay: 0.6}}
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold 2xl:text-7xl ">Frontend Developer
+          </motion.h1>
+
+          <motion.h1 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 2, delay: 0.8}}
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold 2xl:text-7xl ">& Web Designer.
+          </motion.h1>
+
+          <motion.p 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 2, delay: 1}}
+            className="my-4 text-slate-50/75 2xl:text-xl">I'm a student majoring in Informatics who love to development a website especially Frontend, because i like to design website or application and i love what i do.
+          </motion.p>
 
           <Link
             to="/link" className="animate-bounce bg-orange-400 px-0.5 2xl:px-1 py-0.5 2xl:py-1 rounded-4xl flex gap-2 2xl:gap-3">

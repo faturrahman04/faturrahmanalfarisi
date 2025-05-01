@@ -18,8 +18,8 @@ const Navbar = () => {
         </div>
         <ul className="hidden lg:flex justify-between w-[40%] text-white 2xl:text-xl">
           <li className={`${listNav}`}><a href="#services">Services</a></li>
-          <li className={`${listNav}`}><a href="">Skills</a></li>
-          <li className={`${listNav}`}><a href="">Contact</a></li>
+          <li className={`${listNav}`}><a href="#skills">Skills</a></li>
+          <li className={`${listNav}`}><a href="#contact">Contact</a></li>
         </ul>
         <div onClick={handleHamburgerClicked} className={`p-2 rounded-md lg:hidden ${isHamburgerClicked ? 'bg-orange-500' : ''}`}>
           <img src="./hamburgermenu.svg" alt="" />
@@ -31,8 +31,8 @@ const Navbar = () => {
         <div className="h-full">
           <ul className="flex flex-col items-center justify-between h-[85%] text-slate-900">
             <li className={`${listNav}`}><a href="#services">Services</a></li>
-            <li className={`${listNav}`}><a href="">Skills</a></li>
-            <li className={`${listNav}`}><a href="">Contact</a></li>
+            <li className={`${listNav}`}><a href="#skills">Skills</a></li>
+            <li className={`${listNav}`}><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
