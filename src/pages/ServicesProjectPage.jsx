@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import FrontendCard from "../components/FrontendCard";
 
 const ServicesProjectPage = (
@@ -8,6 +9,7 @@ const ServicesProjectPage = (
 ) => {
   return (
     <div className="bg-gray-900 md:min-h-screen text-white px-3 lg:px-20 2xl:px-24 py-6">
+      <Link className="inline-block mb-5 text-orange-400 text-shadow-md text-shadow-orange-700 underline" to="/">Home</Link>
       <h1 className="font-pacifico text-lg md:text-xl xl:text-2xl 2xl:text-4xl">{title}</h1>
       <div className="grid mt-6 grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         {projects}
@@ -25,6 +27,7 @@ export function FrontendWebsite() {
       <FrontendCard image="./frontend/toDoList.png" linkProject="https://faturrahman04.github.io/to-do-list-app/" repository="https://github.com/faturrahman04/to-do-list-app" />
       <FrontendCard image="./frontend/personalWeb.png" linkProject="https://faturrahman04.github.io/personal-web-v1/" repository="https://github.com/faturrahman04/personal-web-v1" />
       <FrontendCard image="./frontend/weatherApp.png" linkProject="https://weather-app-f04.vercel.app/" repository="https://github.com/faturrahman04/weather-app" />
+      <FrontendCard image="./frontend/calculatorApp.png" linkProject="https://faturrahman04.github.io/calculator-app/" repository="https://github.com/faturrahman04/calculator-app" />
     </>
     
   )

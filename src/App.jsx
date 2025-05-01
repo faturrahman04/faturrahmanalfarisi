@@ -7,7 +7,9 @@ import ContactSection from "./section/ContactSection"
 
 function App() {
   return (
-    <div className="overflow-hidden">
+    <div 
+      className="overflow-hidden"
+      >
       <Navbar />
       <HeroSection />
       <ServicesSection />

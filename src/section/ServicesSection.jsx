@@ -11,15 +11,16 @@ const ServicesSection = () => {
           servicesTitle="Frontend Website" 
           servicesDesc="I have 1+ year exprience in frontend web development, i had finished many projects which is personal project, frontend web development is one of my favorite role in website development"
           servicesImage="laptop.svg" 
+          totalProject="6 Projects"
           navigation="/frontendwebsite" 
           />
 
-          <ServicesCard 
+          {/* <ServicesCard 
           servicesTitle="Website Design"
           servicesDesc=""
           />
           <ServicesCard servicesTitle="Mobile App Design" />
-          <ServicesCard servicesTitle="Website Projects" />
+          <ServicesCard servicesTitle="Website Projects" /> */}
         </div>
 
       </div>
