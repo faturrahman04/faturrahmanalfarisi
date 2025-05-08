@@ -8,19 +8,24 @@ const ServicesSection = () => {
 
         <div className="my-4 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
           <ServicesCard 
-          servicesTitle="Frontend Website" 
+          servicesTitle="Frontend Projects" 
           servicesDesc="I have 1+ year exprience in frontend web development, i had finished many projects which is personal project, frontend web development is one of my favorite role in website development"
           servicesImage="laptop.svg" 
           totalProject="6 Projects"
           navigation="/frontendwebsite" 
           />
 
-          {/* <ServicesCard 
-          servicesTitle="Website Design"
-          servicesDesc=""
+          <ServicesCard 
+          servicesTitle="Backend Projects" 
+          servicesDesc="I'm beginner at this role, but i love to code at backend side or server-side, i wanna know how to integrated frontend-backend appliaction"
+          servicesImage="laptop.svg" 
+          totalProject="1 Project"
+          navigation="/backendprojects" 
           />
-          <ServicesCard servicesTitle="Mobile App Design" />
-          <ServicesCard servicesTitle="Website Projects" /> */}
+
+          
+          {/* <ServicesCard servicesTitle="Mobile App Design" />
+          <ServicesCard servicesTitle="Website Projects" />  */}
         </div>
 
       </div>

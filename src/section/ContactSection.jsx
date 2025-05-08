@@ -11,8 +11,8 @@ const ContactSection = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if(inputName == '') {
-      setErrorMsgName('Nama lengkap tidak boleh kosong!');
+    if(inputName.length <= 3) {
+      setErrorMsgName('Nama terlalu pendek!');
     } else {
       emailjs
       .sendForm('service_jbqme79', 'template_klrm1df', form.current, {
