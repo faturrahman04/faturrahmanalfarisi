@@ -45,8 +45,8 @@ const HeroSection = () => {
           </motion.p>
 
           <Link
-            to="/link" className="animate-bounce bg-orange-400 px-0.5 2xl:px-1 py-0.5 2xl:py-1 rounded-4xl flex gap-2 2xl:gap-3">
-            <div className="bg-white text-emerald-800 py-2 2xl:py-2.5 px-5 2xl:px-4.5 rounded-4xl h-full 2xl:text-xl">Social Link</div>
+            to="/link" className="animate-bounce bg-orange-400 px-1 2xl:px-1.5 py-1 2xl:py-1.5 rounded-4xl flex gap-2 2xl:gap-3">
+            <div className="bg-white text-slate-800 font-medium py-2 2xl:py-2.5 px-5 2xl:px-4.5 rounded-4xl h-full 2xl:text-xl">Social Link</div>
             <div className="bg-white w-10 2xl:w-12 grid place-items-center rounded-[50%]">
               <img className="h-6 2xl:h-7 w-6 2xl:w-7 ml-1" src="./play.svg" alt="" />
             </div>

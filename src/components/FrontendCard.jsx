@@ -2,7 +2,7 @@ function FrontendCard({
   image, linkProject, repository
 }){
   return (
-  <div className="border p-4 rounded-sm bg-slate-900">
+  <div className="border p-4 rounded-sm bg-slate-900 hover:shadow-lg hover:shadow-sky-400 hover:scale-105 duration-150">
     <img className="rounded object-cover" src={image} alt="" />
 
     <div className="py-4 mt-2 flex flex-wrap gap-4">

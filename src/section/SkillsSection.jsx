@@ -9,14 +9,13 @@ const SkillsSection = () => {
         <h1 className="text-xl text-white sm:text-2xl font-poppins font-medium mb-12">My <span className="border-b-2 border-b-orange-400 italic text-orange-400">Skills</span> and Favorite Tools</h1>
 
         <CarouselTools>
+          <CarouselCard toolsLogo="html-logo.svg" toolsName="HTML" />
+          <CarouselCard toolsLogo="css-logo.svg" toolsName="CSS" />
           <CarouselCard toolsLogo="js-logo.png" toolsName="JavaScript" />
           <CarouselCard toolsLogo="tailwind-logo.svg" toolsName="Tailwind" />
           <CarouselCard toolsLogo="react-logo.svg" toolsName="React" />
           <CarouselCard toolsLogo="figma-logo.svg" toolsName="Figma" />
-          <CarouselCard toolsLogo="php-logo.svg" toolsName="PHP" />
-          <CarouselCard toolsLogo="bootstrap-logo.svg" toolsName="Bootstrap" />
-          <CarouselCard toolsLogo="codeigniter-logo.svg" toolsName="CodeIgniter" />
-          
+          <CarouselCard toolsLogo="nodejs-logo.svg" toolsName="NodeJS" />
         </CarouselTools>   
         
 
