@@ -5,7 +5,7 @@ import FrontendCard from "../components/FrontendCard";
 const ServicesProjectPage = (
   {
     TitlePage: title,
-    children: projects
+    children: projects,
   }
 ) => {
   return (

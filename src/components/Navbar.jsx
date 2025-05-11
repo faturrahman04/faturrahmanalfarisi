@@ -21,7 +21,7 @@ const Navbar = () => {
           <li className={`${listNav}`}><a href="#skills">Skills</a></li>
           <li className={`${listNav}`}><a href="#contact">Contact</a></li>
         </ul>
-        <div onClick={handleHamburgerClicked} className={`p-2 rounded-md lg:hidden ${isHamburgerClicked ? 'bg-orange-500' : ''}`}>
+        <div onClick={handleHamburgerClicked} className={`p-2 cursor-pointer rounded-md lg:hidden ${isHamburgerClicked ? 'bg-orange-500' : ''}`}>
           <img src="./hamburgermenu.svg" alt="" />
         </div>
       </div>
