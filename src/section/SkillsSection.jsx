@@ -6,7 +6,7 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="bg-gray-900">
       <div className="px-3 lg:px-20 2xl:px-24 pt-6 pb-12">
-        <h1 className="text-xl text-white sm:text-2xl font-poppins font-medium mb-12">My <span className="border-b-2 border-b-orange-400 italic text-orange-400">Skills</span> and Favorite Tools</h1>
+        <h1 className="text-xl text-white sm:text-2xl lg:text-4xl font-winkyRough font-medium mb-12">My <span className="border-b-2 border-b-orange-400 italic text-orange-400">Skills</span> and Favorite Tools</h1>
 
         <CarouselTools>
           <CarouselCard toolsLogo="html-logo.svg" toolsName="HTML" />

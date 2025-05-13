@@ -7,12 +7,12 @@ const HeroSection = () => {
       <div
          className="px-3 lg:px-20 2xl:px-24 pt-6 flex flex-col gap-6 lg:flex-row lg:gap-3 ">
         
-        <div className="grid place-items-center lg:place-items-start mt-8 font-poppins text-center lg:text-left gap-1 lg:gap-3 lg:w-[70%]">
+        <div className="grid place-items-center lg:place-items-start mt-8 text-center lg:text-left gap-1 lg:gap-3 lg:w-[70%] font-winkyRough">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1}}
             transition={{duration: 2}}
-            className="border-2 border-orange-400 w-32 2xl:w-36 text-center py-1 2xl:py-3 sm:text-lg 2xl:text-xl shadow-md shadow-orange-600">Hello There!
+            className="border-2 border-orange-400 w-32 2xl:w-36 text-center py-1 2xl:py-3 sm:text-lg 2xl:text-xl shadow-md shadow-orange-600 font-winkyRough">Hello There!
           </motion.h1>
 
           
@@ -20,21 +20,21 @@ const HeroSection = () => {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 2, delay: 0.4}}
-            className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-7xl font-semibold mt-2">I'm <span className="text-orange-400 font-normal italic border-b-2 border-orange-400">Faturrahman Alf,</span>
+            className="text-3xl sm:text-5xl lg:text-7xl 2xl:text-8xl font-semibold mt-2">I'm <span className="text-orange-400 font-normal italic border-b-2 border-orange-400">Faturrahman Alf,</span>
           </motion.h1>
 
           <motion.h1 
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 2, delay: 0.6}}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold 2xl:text-7xl ">Frontend Developer
+            className="text-3xl sm:text-5xl lg:text-6xl font-semibold 2xl:text-7xl ">Frontend Developer
           </motion.h1>
 
           <motion.h1 
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 2, delay: 0.8}}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold 2xl:text-7xl ">& Web Designer.
+            className="text-3xl sm:text-5xl lg:text-6xl font-semibold 2xl:text-7xl ">& Web Designer.
           </motion.h1>
 
           <motion.p 
@@ -61,7 +61,7 @@ const HeroSection = () => {
 
       </div>
 
-      <div className="relative mt-18 ">
+      <div className="relative mt-18 font-winkyRough">
 
         <div className="z-20 h-12 md:h-14 2xl:h-18 bg-orange-400 flex flex-nowrap items-center gap-10 md:gap-20 overflow-hidden font-medium text-orange-950 md:text-xl 2xl:text-2xl">
           <img className="w-4 md:w-5 2xl:w-6" src="./sparkles.svg" alt="" />

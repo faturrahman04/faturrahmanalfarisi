@@ -17,7 +17,7 @@ export const CarouselCard = ({
       <div className="bg-white p-6 sm:p-5 2xl:p-7 w-24 sm:w-20 lg:w-24 2xl:w-36 h-24 lg:h-24 sm:h-20 2xl:h-36 rounded-[50%] mb-8 sm:mb-10 2xl:mb-16">
         <img className="w-16 2xl:w-28 object-cover" src={`./${toolsLogo}`} alt="" />
       </div>
-      <h2 className="text-center text-white font-medium text-lg 2xl:text-2xl font-poppins">{toolsName}</h2>
+      <h2 className="text-center text-white font-medium text-lg 2xl:text-2xl font-winkyRough">{toolsName}</h2>
     </div>
   )
 }

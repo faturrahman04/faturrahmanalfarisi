@@ -16,8 +16,9 @@ const Navbar = () => {
         <div>
           <h1 className="font-pacifico text-xl 2xl:text-2xl tracking-wide text-slate-100">Faturrahman</h1>
         </div>
-        <ul className="hidden lg:flex justify-between w-[40%] text-white 2xl:text-xl">
+        <ul className="hidden lg:flex justify-between w-[40%] text-white 2xl:text-xl font-winkyRough">
           <li className={`${listNav}`}><a href="#services">Services</a></li>
+          <li className={`${listNav}`}><a href="#about">About</a></li>
           <li className={`${listNav}`}><a href="#skills">Skills</a></li>
           <li className={`${listNav}`}><a href="#contact">Contact</a></li>
         </ul>
@@ -31,6 +32,7 @@ const Navbar = () => {
         <div className="h-full">
           <ul className="flex flex-col items-center justify-between h-[85%] text-slate-900">
             <li className={`${listNav}`}><a href="#services">Services</a></li>
+            <li className={`${listNav}`}><a href="#about">About</a></li>
             <li className={`${listNav}`}><a href="#skills">Skills</a></li>
             <li className={`${listNav}`}><a href="#contact">Contact</a></li>
           </ul>

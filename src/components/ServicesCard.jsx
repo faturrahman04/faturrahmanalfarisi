@@ -7,12 +7,12 @@ export const ServicesCard = ({servicesTitle, servicesImage, navigation, services
         <img className="w-10 h-10" src={`./${servicesImage}`} alt="" />
       </div>
 
-      <h2 className="font-medium text-lg my-2 text-orange-400 text-shadow-md text-shadow-orange-700">{servicesTitle}</h2>
-      <p className="font-light">{servicesDesc}</p>
+      <h2 className="font-medium text-xl my-2 text-orange-400 text-shadow-md text-shadow-orange-700">{servicesTitle}</h2>
+      <p className="font-light lg:text-lg">{servicesDesc}</p>
             
       <p className="mt-2 font-medium text-white/75">{totalProject}</p>
 
-      <Link className="absolute bottom-4 mt-2 inline-block text-orange-400 text-shadow-md text-shadow-orange-700 font-medium border-b-2 border-b-orange-400 hover:scale-90 duration-150 active:scale-90 animate-bounce" to={navigation}>Click here to see my projects</Link>
+      <Link className="absolute bottom-4 mt-2 inline-block text-orange-400 text-shadow-md text-shadow-orange-700 lg:text-lg font-medium border-b-2 border-b-orange-400 hover:scale-90 duration-150 active:scale-90 animate-bounce" to={navigation}>Click here to see my projects</Link>
     </div>
   )
 }
