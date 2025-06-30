@@ -1,3 +1,5 @@
+// File ini merupakan template dari skill section untuk menampilkan card bahasa pemrograman atau skill
+
 const CarouselTools = ({
   children : slides
 }) => {
