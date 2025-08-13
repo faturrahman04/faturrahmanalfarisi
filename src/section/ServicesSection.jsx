@@ -4,7 +4,7 @@ const ServicesSection = () => {
   return (
     <section id="services" className="bg-gray-900">
       <div className="px-3 lg:px-20 2xl:px-24 pt-6 pb-4 font-winkyRough">
-        <h2 className="text-white text-xl sm:text-3xl lg:text-4xl italic font-medium border-b-orange-400 border-b-2 w-fit">Services</h2>
+        <h2 className="text-white text-xl sm:text-3xl lg:text-4xl italic font-medium border-b-orange-400 border-b-2 w-fit">Projects</h2>
         <h5 className="text-white/75 mt-4 text-lg">This is my projects that i have made, you can interact the card and click the <span className="text-orange-400">"click here to see my projects"</span> button to see more projects</h5>
 
         <div className="my-4 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
