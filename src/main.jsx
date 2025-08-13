@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')).render(
 
         {/* Frontend Details Movie App */}
         <Route
-          path='/frontend-1'
+          path='/f3movies-movie-app'
           element={<DetailsProjectPage
           projectTitle="Movie App"
           projectImage="./frontend/gambar.png"

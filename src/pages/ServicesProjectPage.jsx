@@ -24,7 +24,7 @@ const ServicesProjectPage = (
 export function FrontendWebsite() {
   return (
     <>
-      <ProjectCard image="./frontend/gambar.png" linkDetail="/frontend-1" repository="https://github.com/faturrahman04/movie-react-app"
+      <ProjectCard image="./frontend/gambar.png" linkDetail="/f3movies-movie-app" repository="https://github.com/faturrahman04/movie-react-app"
       desc={`Frontend project with movie app theme using OMDB Api, if u want to review the website click "View the website" button`}
       />
       <ProjectCard image="./frontend/coffeShop.png" linkProject="https://faturrahman04.github.io/coffe-shop-CaffeIn" repository="https://github.com/faturrahman04/coffe-shop-CaffeIn" 
