@@ -34,7 +34,7 @@ const HeroSection = () => {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 2, delay: 0.8}}
-            className="text-3xl sm:text-5xl lg:text-6xl font-semibold 2xl:text-7xl ">& Web Designer.
+            className="text-3xl sm:text-5xl lg:text-6xl font-semibold 2xl:text-7xl ">& Web Developer.
           </motion.h1>
 
           <motion.p 
