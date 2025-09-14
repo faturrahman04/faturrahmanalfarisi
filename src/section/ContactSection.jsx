@@ -4,30 +4,41 @@ import emailjs from "@emailjs/browser"
 const ContactSection = () => {
   const [inputName, setInputName] = useState('');
   const [errorMsgName, setErrorMsgName] = useState('');
+  const [errorMsgTextarea, setErrorMsgTextarea] = useState('');
+  const [buttonDisabled, setButtonDisabled] = useState(false);
   const form = useRef();
-
-  
+  const inputNameBox = useRef(null);
+  const inputMessageBox = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if(inputName.length <= 3) {
-      setErrorMsgName('Nama terlalu pendek!');
-    } else {
+    if(inputName.length < 3) {
+      setErrorMsgName('Nama tidak boleh kurang dari 3 huruf');
+    } else if (inputMessageBox.current.value === '') {
+      setErrorMsgTextarea('Mohon memasukkan pesan pada kolom teks!')
+    }
+    else {
+      setButtonDisabled(true);
+
+      setTimeout(() => {
+        setButtonDisabled(false)
+      }, 3000);
+
       emailjs
       .sendForm('service_jbqme79', 'template_klrm1df', form.current, {
         publicKey: 'OOvkZ3N4lZeN7pfTr',
       })
         .then(
           () => {
-            console.log('Pesan terkirim!')          
+            setInputName('')
+            inputMessageBox.current.value = '';
           },
           (err) => {
             console.log(err)
           },
         )
-    }
-    
+    }  
   }
 
   return (
@@ -40,17 +51,20 @@ const ContactSection = () => {
         <div>
           <form ref={form} onSubmit={sendEmail}>
             <input 
+            ref={inputNameBox}
             onChange={(e) => setInputName(e.target.value)}
             value={inputName}
             name="name" 
             className="px-3 py-1.5 w-full rounded-md outline-1 outline-gray-300 text-white placeholder:text-gray-400 focus:outline-2 sm:text-sm/6 focus:outline-orange-500 my-8 font-winkyRough" 
             type="text" 
             placeholder="Full name" 
-            required />
+            required
+             />
             <p className="absolute text-red-500 -mt-8">{errorMsgName}</p>
             <input name="time" type="datetime-local" className="hidden"/>
-            <textarea name="message" id="message" rows="5" className="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-white outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange-500 sm:text-sm/6 font-winkyRough"></textarea>
-            <button type="submit" className="relative z-10 overflow-hidden bg-transparent w-full rounded-md text-orange-400 py-1.5 font-semibold font-winkyRough text-lg outline-none mt-8 border border-orange-500 hover:text-black after:absolute after:content-[''] after:w-full after:left-0 after:top-0 after:rounded-md after:h-full after:bg-orange-400 after:duration-400 cursor-pointer after:-translate-x-[300%] hover:after:translate-x-0 after:-z-10">Confirm</button>
+            <textarea ref={inputMessageBox} name="message" id="message" rows="5" className="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-white outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange-500 sm:text-sm/6 font-winkyRough"></textarea>
+            <p className="absolute text-red-500">{errorMsgTextarea}</p>
+            <button disabled={buttonDisabled} type="submit" className={`relative z-10 overflow-hidden bg-transparent w-full rounded-md text-orange-400 py-1.5 font-semibold font-winkyRough text-lg outline-none mt-8 border border-orange-500 hover:text-black after:absolute after:content-[''] after:w-full after:left-0 after:top-0 after:rounded-md after:h-full after:bg-orange-400 after:duration-400 cursor-pointer after:-translate-x-[300%] hover:after:translate-x-0 after:-z-10 ${buttonDisabled ? 'animate-pulse' : ''}`}>{buttonDisabled ? 'Sending...' : 'Confirm'}</button>
           </form>
         </div>
       </div>
