@@ -5,7 +5,7 @@ import App from './App.jsx'
 import ServicesProjectPage, { BackendProject, FrontendWebsite } from './pages/ServicesProjectPage.jsx'
 import SocialLinkPage from './pages/SocialLinkPage.jsx'
 import DetailsProjectPage from './pages/DetailsProjectPage.jsx'
-import TechStack, { TechStackMovieApp, TechStackCoffeShopCaffeIn, TechStackCalculatorApp, TechStackToDoListApp, TechStackMansapadparLib } from './components/TechStack.jsx'
+import TechStack, { TechStackMovieApp, TechStackCoffeShopCaffeIn, TechStackCalculatorApp, TechStackToDoListApp, TechStackMansapadparLib, TechStackWrithink } from './components/TechStack.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -129,6 +129,21 @@ createRoot(document.getElementById('root')).render(
               projectGithub="https://github.com/faturrahman04/content-based-filtering-skripsi"
               projectTechStack={<TechStack children={<TechStackMansapadparLib />} />} />} 
             />
+
+          <Route
+            path='/writhink'
+            element={<DetailsProjectPage
+              projectTitle="Writhink"
+              projectImage="./backend/writhink.png"
+              projectDesc={`Projek fullstack yang dibuat dengan ReactJS untuk membuat user interface dan ExpressJS untuk membuat API, projek ini bertemakan todo-list yang bertujuan untuk meningkatkan produktifitas, project ini dirancang terinsipirasi oleh sebuah kata yang berbunyi "setiap pikiran harus dituangkan dengan sebuah kata yang kemudan akan menjadi sebuah aksi dan sebuah aksi akan menciptakan sebuah kebiasaan, kebiasaan akan menciptakan karakter dan karakter akan menentukan takdir-mu".`}
+              projectDesc2={`Project ini disiapkan dalam kurun waktu 3 minggu dan projek ini bertujuan untuk mempelajari membuat aplikasi fullstack dari frontend hingga backend. Tantangan dari pembuatan aplikasi ini adalah pada pembuatan jwt dan tampilan dashboard, fitur jwt authentication yang diimplementasikan masih sangat sederhana. Projek ini masih akan dikembangkan atau diperbarui kedepannya untuk memperkaya fitur.`}
+              projectDesc3={`Silahkan untuk membuka projek padalink yang telah dicantumkan apabila ingin melihat detail pada projek ini, serta saya sebagai developer sangat terbuka apabila ada masukan jika terdapat bug atau kekurangan pada projek. Silahkan memasukkan masukan pada kolom kontak jika ingin memberi masukan`}
+              projectCreatedAt="16 September 2025"
+              projectHref="https://writhink.vercel.app/"
+              projectLink="https://writhink.vercel.app/"
+              projectGithub="https://github.com/faturrahman04/writhink-fullstack"
+              projectTechStack={<TechStack children={<TechStackWrithink /> } />} />}
+          />
       {/* Backend Website */}
 
     </Routes>
