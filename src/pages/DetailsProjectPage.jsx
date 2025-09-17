@@ -3,6 +3,7 @@ const DetailsProjectPage = ({
   projectImage, 
   projectDesc, 
   projectDesc2,
+  projectDesc3,
   projectTechStack,
   projectGithub,
   projectCreatedAt,
@@ -40,23 +41,26 @@ const DetailsProjectPage = ({
 
         </div>
 
+        <div className="flex items-center gap-2 mt-6">
+          <a className="text-sm md:text-md lg:text-lg border-2 border-slate-200 px-3 py-2 rounded-sm hover:shadow-xs hover:shadow-slate-200" href={projectGithub}>GitHub Repository</a>
+          <a className="text-sm md:text-md lg:text-lg bg-blue-500 px-3 py-2 rounded-sm text-white border-2 border-blue-500 hover:shadow-xs hover:shadow-blue-500" href={projectHref}>View the Project</a>
+        </div>
+
         
       </div>
 
       <div className="lg:mt-10">
-        <p className="pt-4 text-sm md:text-lg text-slate-200 font-light">
+        <p className="pt-4 text-lg xl:text-xl text-slate-200 font-light">
         {projectDesc}
         </p>
 
-        <p className="pt-4 text-sm md:text-lg text-slate-200 font-light">
+        <p className="pt-4 text-lg xl:text-xl text-slate-200 font-light">
           {projectDesc2}
         </p>
-      </div>
 
-      
-      <div className="flex items-center gap-2 mt-6">
-        <a className="text-sm md:text-md lg:text-lg border-2 border-slate-200 px-3 py-2 rounded-sm hover:shadow-xs hover:shadow-slate-200" href={projectGithub}>GitHub Repository</a>
-        <a className="text-sm md:text-md lg:text-lg bg-blue-500 px-3 py-2 rounded-sm text-white border-2 border-blue-500 hover:shadow-xs hover:shadow-blue-500" href={projectHref}>View the Project</a>
+        <p className="pt-4 text-lg xl:text-xl text-slate-200 font-light">
+          {projectDesc3}
+        </p>
       </div>
 
     <footer>

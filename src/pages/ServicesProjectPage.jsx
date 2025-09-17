@@ -47,6 +47,9 @@ export function BackendProject() {
   return (
     <>
       <ProjectCard image="./backend/mansapadparlib.png" linkDetail="/mansapadparlib" desc={`My thesis project called "Mansapadpar Library" with recommendation features using content based filtering algorithm.`}/>
+
+      <ProjectCard image="./backend/writhink.png" linkDetail="/writhink" desc={`Projek fullstack dengan tema todo-list yang dibuat dengan ReactJS disisi frontend atau client dan ExpressJS disisi server`} />
+
       
     </>
     
