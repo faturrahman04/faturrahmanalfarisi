@@ -2,10 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
 @import "tailwindcss";
 
 @theme {
   --font-pacifico: "Pacifico", sans-serif;
   --font-poppins: "Poppins", sans-serif;
   --font-winkyRough: "Winky Rough", sans-serif;
+  --font-interTight: "Inter Tight", sans-serif;
+  --font-alanSans:"Alan Sans", sans-serif;
+
+  --animate-slider-tools: slider-tools 10s linear infinite;
+
+  @keyframes slider-tools {
+    0% {
+      transform: translateX(0%)
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }

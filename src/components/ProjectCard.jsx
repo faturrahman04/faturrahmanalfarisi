@@ -1,16 +1,55 @@
-function ProjectCard({
-  image, linkDetail, desc
-}){
+import * as Icon from 'react-feather'
+import TechStack from './TechStack';
+
+const ProjectCard = ({
+  projectTitle,
+  projectType,
+  projectDate,
+  projectDescription,
+  projectImage,
+  projectStack,
+  projectRepository,
+  projectLink
+}) => {
   return (
-  <div className="border p-4 rounded-sm bg-slate-900 hover:shadow-sm hover:shadow-sky-400 duration-150 relative">
-    <img className="rounded object-cover" src={image} alt="" />
+    <div className="border w-full p-5 lg:p-8 2xl:p-10 rounded-sm relative">
+      <div className="flex flex-col md:flex-row justify-between">
+        <div>
+          <h3 className="text-xl xl:text-2xl 2xl:text-3xl font-semibold">{projectTitle}</h3>
+          <h4 className="text-white/80 xl:text-base 2xl:text-lg">{projectType}</h4>
+        </div>
+        <p className="text-sm xl:text-base 2xl:text-lg">{projectDate}</p>
+      </div>
 
-    <p className="mb-14 mt-2 font-winkyRough">{desc}</p>
+      <div className="mt-4 flex flex-col-reverse md:flex-row md:items-center gap-4">
+        <div>
+          {projectDescription}
+        </div>
 
-    <div className="py-4 mt-2 flex flex-wrap gap-4 absolute bottom-0">
-      <a className="border px-8 2xl:px-6 py-2 font-winkyRough text-sm 2xl:text-xl hover:bg-slate-100 hover:text-black duration-300 rounded-sm cursor-pointer" href={linkDetail}>See Details</a>
+        <img className="w-[26rem] 2xl:w-[36rem] h-fit max-md:w-full rounded-sm" src={projectImage} alt="" />
+
+      </div>
+
+      <div className="mt-4">
+        <p className='2xl:text-xl'>Tech stack:</p>
+        <div className="flex gap-5 mt-0.5 w-full">
+          <TechStack>{projectStack}</TechStack>
+        </div>
+      </div>
+
+      <div className="flex gap-3 mt-4">
+        <a className="flex gap-3 bg-neutral-50 text-neutral-900 px-5 py-1.5 rounded-xs" href={projectRepository}>
+          <Icon.Codepen />
+          <p>Code</p>
+        </a>
+        <a className="flex gap-3 px-5 py-1.5 border border-neutral-50 rounded-xs" href={projectLink}>
+          <Icon.Eye />
+          <p>Live</p>
+        </a>
+      </div>
+
     </div>
-  </div>
-)}
+  )
+}
 
 export default ProjectCard;
