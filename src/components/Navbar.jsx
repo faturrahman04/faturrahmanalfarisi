@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <>
     <nav className={`fixed h-24 z-60 w-full flex items-center 2xl:h-24 px-4 lg:px-40 2xl:px-80 font-poppins lg:bg-transparent text-sm`}>
-      <div className="not-lg:shadow-none rounded-3xl px-5 lg:px-12 flex items-center justify-between w-full h-2/3 bg-neutral-400/20 backdrop-blur-md border-2 border-neutral-300">
+      <div className="not-lg:shadow-none rounded-xl px-5 lg:px-12 flex items-center justify-between w-full h-1/2 bg-neutral-400/20 backdrop-blur-md border border-neutral-300/80">
         <div>
-          <h1 className="text-xl 2xl:text-2xl tracking-wide text-slate-100">Faturrahman</h1>
+          <h1 className="text-base 2xl:text-lg tracking-wide text-slate-100">Faturrahman</h1>
         </div>
         <ul className="hidden lg:flex justify-between xl:w-[40%] lg:w-[60%] text-white 2xl:text-xl font-alanSans">
           <li className={`${listNav}`}><a href="#education">Education</a></li>

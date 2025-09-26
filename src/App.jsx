@@ -18,8 +18,6 @@ function App() {
       <Navbar />
 
       <div className="bg-neutral-900/80 backdrop-blur-3xl">
-      <ReturnToTop />
-
       <HeroSection />
       <EducationSection />
       <ServicesSection />
@@ -28,6 +26,7 @@ function App() {
       <Footer />
       </div>
     </div>
+    <ReturnToTop />
     </>
   )
 }

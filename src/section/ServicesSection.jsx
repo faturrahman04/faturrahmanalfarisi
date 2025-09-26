@@ -21,7 +21,7 @@ const ServicesSection = () => {
           }
           projectImage={`./backend/writhink.png`}
           projectStack={<TechStackWrithink />}
-          projectLink={`https://https://writhink.vercel.app/`}
+          projectLink={`https://writhink.vercel.app/`}
           projectRepository={`https://github.com/faturrahman04/writhink-fullstack`}
         />
         {/* Writhink */}
