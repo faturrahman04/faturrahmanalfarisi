@@ -55,16 +55,16 @@ const ContactSection = () => {
             onChange={(e) => setInputName(e.target.value)}
             value={inputName}
             name="name" 
-            className="px-3 py-1.5 w-full rounded-md outline-1 outline-gray-300 text-white placeholder:text-gray-400 focus:outline-2 sm:text-sm/6 focus:outline-orange-500 my-8" 
+            className="px-3 py-1.5 w-full rounded-md outline-1 outline-gray-300 text-white placeholder:text-gray-400 focus:outline-2 sm:text-sm/6 focus:outline-red-400 my-8" 
             type="text" 
             placeholder="Full name" 
             required
              />
             <p className="absolute text-red-500 -mt-8">{errorMsgName}</p>
             <input name="time" type="datetime-local" className="hidden"/>
-            <textarea ref={inputMessageBox} name="message" id="message" rows="5" className="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-white outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange-500 sm:text-sm/6" placeholder="Input some messages"></textarea>
+            <textarea ref={inputMessageBox} name="message" id="message" rows="5" className="block w-full rounded-md bg-transparent px-3 py-1.5 text-base text-white outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-red-400 sm:text-sm/6" placeholder="Input some messages"></textarea>
             <p className="absolute text-red-500">{errorMsgTextarea}</p>
-            <button disabled={buttonDisabled} type="submit" className={`relative z-10 overflow-hidden bg-transparent w-full rounded-md text-orange-400 py-1.5 font-semibold text-lg outline-none mt-8 border border-orange-500 hover:text-black after:absolute after:content-[''] after:w-full after:left-0 after:top-0 after:rounded-md after:h-full after:bg-orange-400 after:duration-400 cursor-pointer after:-translate-x-[300%] hover:after:translate-x-0 after:-z-10 ${buttonDisabled ? 'animate-pulse' : ''}`}>{buttonDisabled ? 'Sending...' : 'Confirm'}</button>
+            <button disabled={buttonDisabled} type="submit" className={`relative z-10 overflow-hidden bg-transparent w-full rounded-md text-red-400 py-1.5 font-semibold text-lg outline-none mt-8 border border-red-400 hover:text-black after:absolute after:content-[''] after:w-full after:left-0 after:top-0 after:rounded-md after:h-full after:bg-red-400 after:duration-400 cursor-pointer after:-translate-x-[300%] hover:after:translate-x-0 after:-z-10 ${buttonDisabled ? 'animate-pulse' : ''}`}>{buttonDisabled ? 'Sending...' : 'Confirm'}</button>
           </form>
         </div>
       </div>

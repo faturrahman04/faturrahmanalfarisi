@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div
          className="px-3 lg:px-20 2xl:px-24 pt-6 pb-12 flex flex-col gap-6 lg:flex-row lg:gap-3 justify-center">
         
-        <div className="grid place-items-center mt-8 text-center lg:text-left gap-1 lg:gap-3 lg:w-[70%] font-alanSans">
+        <div className="flex flex-col items-center mt-8 text-center lg:text-left gap-1 lg:gap-3 lg:w-[70%] font-alanSans">
           <h1
             aria-label='greetings'
             className="border-2 border-red-400 w-32 2xl:w-36 text-center py-1 2xl:py-3 sm:text-lg 2xl:text-xl shadow-md shadow-red-600">Hello There!

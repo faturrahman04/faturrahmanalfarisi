@@ -13,7 +13,7 @@ const EducationSection = () => {
             </div>
             <p className="absolute top-4 left-18">SMAN 1 Karimun</p>
 
-            <div className="absolute top-16 left-24">
+            <div className="absolute top-16 left-24 max-sm:left-20">
               <ul className="list-disc flex flex-col gap-2">
                 <li>Completely learning about science stuffs</li>
                 <li>Learning about math and logics</li>
@@ -29,7 +29,7 @@ const EducationSection = () => {
             </div>
             <p className="absolute top-4 left-18">UIN Sjech M.Djamil Djambek Bukittinggi</p>
 
-            <div className="absolute top-16 left-24">
+            <div className="absolute top-16 left-24 max-sm:left-20">
               <ul className="list-disc flex flex-col gap-2">
                 <li>Develop a thesis project was called Mansapadpar Library</li>
                 <li>Student of Education Informatika and Computer</li>

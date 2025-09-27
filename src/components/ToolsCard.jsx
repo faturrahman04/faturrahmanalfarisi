@@ -3,7 +3,7 @@ import clsx from "clsx"
 const ToolsCard = ({children, toolImage}) => {
   return (
     <div className={clsx(
-      "flex items-center z-10 relative overflow-hidden text-white gap-4 border rounded-sm p-3 shadow-xs after:content-[''] after:-z-10 after:absolute after:left-0 after:right-0 after:bg-gradient-to-b after:from-neutral-900 after:from-40% after:to-100% after:bottom-0 after:h-3",
+      "flex items-center z-10 relative overflow-hidden text-white gap-4 border rounded-sm p-3 shadow-xs after:content-[''] after:-z-10 after:absolute after:left-0 after:right-0 after:bg-gradient-to-b after:from-neutral-900/10 after:from-40% after:to-100% after:bottom-0 after:h-3",
       {
         "border-orange-600 after:to-orange-600/60": children === 'HTML' || children === 'Codeigniter',
         "border-teal-400 after:to-teal-400/60": children === 'CSS' || children === 'React' || children === 'TailwindCSS',

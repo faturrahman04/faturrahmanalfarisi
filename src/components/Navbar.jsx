@@ -30,7 +30,7 @@ const Navbar = () => {
 
     </nav>
 
-      <div className={`fixed top-20 right-10 z-50 bg-neutral-600/60 pt-8 h-64 duration-300 backdrop-blur-md font-poppins w-[40%] lg:hidden origin-top-right ${isHamburgerClicked ? "scale-100" : "scale-0"}`}>
+      <div className={`fixed top-16 rounded-bl-md rounded-br-md right-10 z-50 bg-neutral-600/60 pt-8 h-64 duration-300 backdrop-blur-md font-poppins w-[40%] lg:hidden origin-top-right ${isHamburgerClicked ? "scale-100" : "scale-0"}`}>
         <div className="h-full">
           <ul className="flex flex-col items-center justify-between h-[85%] text-slate-900">
             <li className={`${listNav}`}><a href="#education">Education</a></li>
