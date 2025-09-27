@@ -12,7 +12,7 @@ const ProjectCard = ({
   projectLink
 }) => {
   return (
-    <div className="border w-full p-5 lg:p-8 2xl:p-10 rounded-md border-neutal-400/20 relative">
+    <div data-aos="fade-left" className="border w-full p-5 lg:p-8 2xl:p-10 rounded-md border-neutal-400/20 relative">
       <div className="flex flex-col md:flex-row justify-between">
         <div>
           <h3 className="text-xl xl:text-2xl 2xl:text-3xl font-semibold">{projectTitle}</h3>

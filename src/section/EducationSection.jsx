@@ -6,7 +6,7 @@ const EducationSection = () => {
 
         <div className="mt-6 flex flex-col gap-8">
 
-          <div className="flex relative gap-4">
+          <div className="flex relative gap-4" data-aos="fade-right">
             <div className="flex flex-col items-center gap-2">
               <img className="w-14" src="./logo/smansaka.png" alt="Logo Smansaka" />
               <div className="border border-slate-50/80 h-50"></div>
@@ -22,9 +22,9 @@ const EducationSection = () => {
             </div>
           </div>
 
-          <div className="flex relative gap-4">
+          <div className="flex relative gap-4" data-aos="fade-right">
             <div className="flex flex-col items-center gap-2">
-              <img className="w-14" src="./logo/uinsmdd.png" alt="Logo Smansaka" />
+              <img className="w-14" src="./logo/uinsmdd.png" alt="Logo UIN SMDD" />
               <div className="border border-slate-50/80 h-50"></div>
             </div>
             <p className="absolute top-4 left-18">UIN Sjech M.Djamil Djambek Bukittinggi</p>

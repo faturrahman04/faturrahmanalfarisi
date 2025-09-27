@@ -7,8 +7,19 @@ import ContactSection from "./section/ContactSection"
 import EducationSection from "./section/EducationSection"
 import ReturnToTop from "./components/ReturnToTop"
 import BackgroundBlur from "./components/BackgroundBlur"
+import AOS from 'aos'
+import { useEffect } from "react"
+ import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      offset: 50,
+      once: true
+    })
+  }, [])
+
   return (
     <>
     <BackgroundBlur/>

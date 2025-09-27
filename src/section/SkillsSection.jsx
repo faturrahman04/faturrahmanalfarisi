@@ -9,7 +9,7 @@ const SkillsSection = () => {
       <div className="px-3 lg:px-32 2xl:px-44 py-8 font-alanSans">
         <h1 className="text-xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-white font-medium mb-12">My <span className="border-b-2 border-b-red-400 italic text-red-400">Skills</span> and Favorite Tools</h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 px-6 gap-4">
+        <div data-aos='fade-up' className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 px-6 gap-4">
 
           <ToolsCard toolImage={`./html-logo.svg`}>HTML</ToolsCard>
           <ToolsCard toolImage={`./css-logo.svg`}>CSS</ToolsCard>
